@@ -38,13 +38,9 @@ export const ContactForm = () => {
           ></path>
         </svg>
       </div>
-      <form
-        id={'contact'}
-        onSubmit={formik.handleSubmit}
-        className="w-full container h-screen"
-      >
-        <h1 className="text-9xl flex justify-center  font-extrabold  text-white">CONTACT US</h1>
-        <div className="flex flex-col w-1/2 mx-auto lg:gap-10 lg:justify-between bg-[#036ffcff] rounded-xl p-6">
+      <form id={'contact'} onSubmit={formik.handleSubmit} className="w-full container h-screen">
+        <h1 className="text-9xl flex justify-center font-extrabold  text-white">CONTACT US</h1>
+        <div className="flex flex-col w-2/3 my-14 mx-auto lg:gap-10 lg:justify-between bg-[#036ffcff] bg-white shadow-lg rounded-xl p-6">
           <div className={inputCN}>
             <Input
               color="secondary"
