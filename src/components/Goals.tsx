@@ -35,7 +35,7 @@ export const Goals = () => {
   return (
     <div className="relative container w-full h-screen flex flex-col" id="goals">
       <div className="w-full">
-        <h1 className="text-9xl bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-blue-500 via-gray-50 to-white hover:cursor-none bg-white">
+        <h1 className="text-9xl bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-blue-500 via-gray-50 to-white hover:cursor-none bg-white mt-24">
           OUR GOAL
         </h1>
       </div>

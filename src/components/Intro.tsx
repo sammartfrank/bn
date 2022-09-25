@@ -14,8 +14,11 @@ export const Intro = () => {
           building the solution for your business. We thrive on the challenge of creating a product
           that will help you grow your business. The problems we solve are complex, but we are up
           for the challenge.
-          <br /> Albeist, we are a small team, we are a team that is dedicated to providing you with
-          the best solution for your business. Therefore, we excel at what we do and we are always
+        </h2>
+        <br />
+        <h2>
+          Albeist, we are a small team, we are a team that is dedicated to providing you with the
+          best solution for your business. Therefore, we excel at what we do and we are always
           looking to improve.
         </h2>
       </div>
