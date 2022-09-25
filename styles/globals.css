@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.background-animate {
+  background-size: 400%;
+
+  -webkit-animation: MovingSlide 45s ease infinite;
+  -moz-animation: MovingSlide 45s ease infinite;
+  animation: MovingSlide 45s ease infinite;
+}
+
+
+@keyframes MovingSlide {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
