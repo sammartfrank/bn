@@ -6,20 +6,15 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="preload" />
         <link
           href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
           rel="stylesheet"
         />
+        <link rel="preload" href="/public/assets/sea.jpg" />
         <meta
           name="description"
-          content="VELVET's mission is to provide a seamless experience for investors engaging in secondary transactions of illiquid assets by leveraging technology."
-        />
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/assets/favicon/icon-transparent.png"
+          content="Blue Nautilus's mission is to provide the best solution for your need."
         />
 
         <meta name="msapplication-TileColor" content="#b91d47" />

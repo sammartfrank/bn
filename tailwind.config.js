@@ -61,7 +61,6 @@ module.exports = {
     }
   },
   plugins: [
-    require('flowbite/plugin'),
     // This plugin enables us the scrollbar-hide class, which allows us to hide the horizontal scrollbar
     plugin(function ({ addUtilities }) {
       addUtilities({
