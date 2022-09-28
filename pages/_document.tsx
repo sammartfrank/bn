@@ -11,7 +11,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
           rel="stylesheet"
         />
-        <link rel="preload" href="/public/assets/sea.jpg" />
         <meta
           name="description"
           content="Blue Nautilus's mission is to provide the best solution for your need."

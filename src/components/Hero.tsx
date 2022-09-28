@@ -1,26 +1,9 @@
 import { AnchorTwo } from '@icon-park/react';
-import { url } from 'inspector';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import { FaSpinner } from 'react-icons/fa';
+import { useEffect } from 'react';
 import { CenteredLayout } from './CenteredLayout';
 
-const Loader = () => {
-  return (
-    <div className="absolute flex flex-row gap-2 items-center right-10 bottom-24">
-      <p className="text-blue-500 border-r-[0.1rem] border-blue-500 px-2 align-middle animate-pulse">
-        Loading
-      </p>
-      <div className="animate-spin">
-        <FaSpinner size={30} className="text-blue-500" />
-      </div>
-    </div>
-  );
-};
-
 export const Hero = () => {
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     const measureScroll = () => {
       const scrolled = window.scrollY;
@@ -31,19 +14,6 @@ export const Hero = () => {
       }
     };
     addEventListener('scroll', measureScroll);
-
-    setTimeout(() => {
-      const title = document.querySelector('#title') as HTMLElement;
-      const subtitle = document.querySelector('#subtitle') as HTMLElement;
-      const anchor = document.querySelector('#arrow-scroll') as HTMLElement;
-      title.style.transition = 'all 2s ease-in-out';
-      title.style.color = 'white';
-      subtitle.style.transition = 'all 2s ease-in-out';
-      subtitle.style.color = 'white';
-      anchor.style.transition = 'all 2s ease-in-out';
-      anchor.style.color = 'white';
-      setLoading(false);
-    }, 1500);
     return () => {
       removeEventListener('scroll', measureScroll);
     };
@@ -74,7 +44,6 @@ export const Hero = () => {
             REACH OUT
           </button>
         </div>
-        {loading && <Loader />}
         <div className="absolute bottom-24 animate-bounce">
           <AnchorTwo size={25} className="text-blue-500" strokeWidth={6} id="arrow-scroll" />
         </div>
