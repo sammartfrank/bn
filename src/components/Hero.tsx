@@ -5,8 +5,6 @@ import { useEffect, useState } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import { CenteredLayout } from './CenteredLayout';
 
-const seaPath = '/public/assets/sea.jpg';
-
 const Loader = () => {
   return (
     <div className="absolute flex flex-row gap-2 items-center right-10 bottom-24">
@@ -57,7 +55,7 @@ export const Hero = () => {
 
   return (
     <div className={`relative w-full h-screen`} id="hero">
-      <Image src="/assets/sea.jpg" className="z-[-1]" layout="fill" alt="Sea" />
+      <Image src="/assets/sea.jpg" className="z-[-1]" layout="fill" alt="Sea" loading="lazy" />
       <CenteredLayout centerHorizontally={true} centerVertically={true}>
         <div className="flex flex-col gap-5 items-center">
           <h1
